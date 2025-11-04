@@ -1,0 +1,20 @@
+.admin-dashboard__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.admin-dashboard__content {
+  display: flex;
+  flex: 1;
+  background-color: #fff5ec;
+  height: calc(100vh - 60px); /* assuming header is 60px tall */
+}
+
+.admin-dashboard__main {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #fff5ec;
+  padding: 20px;
+}

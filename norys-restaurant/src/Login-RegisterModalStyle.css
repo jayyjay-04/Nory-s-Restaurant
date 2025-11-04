@@ -1,0 +1,315 @@
+/* =========================
+   Shared Modal Styles
+========================= */
+
+/* Overlay */
+.forgot-password__overlay,
+.regis-modal__overlay,
+.login-modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Content Box */
+.forgot-password__content,
+.regis-modal__content,
+.login-modal__content {
+  background: #fff;
+  padding: 35px 30px;
+  border-radius: 12px;
+  width: 420px;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: scaleIn 0.3s ease;
+}
+
+/* Header */
+.login-modal__header,
+.regis-modal__header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Titles */
+.forgot-password__title,
+.regis-modal__title,
+.login-modal__title {
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* Subtitle Center Fix */
+.regis-modal__subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Body */
+.login-modal__body,
+.regis-modal__body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Footer */
+.login-modal__footer,
+.regis-modal__footer {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Close Button */
+.forgot-password__close,
+.regis-modal__close,
+.login-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #000;
+  transition: color 0.2s;
+}
+
+.forgot-password__close:hover,
+.regis-modal__close:hover,
+.login-modal__close:hover {
+  color: #e87722;
+}
+
+/* =========================
+   Unified Input Styles
+========================= */
+
+/* Inputs — All Modals */
+.forgot-password__input,
+.regis-modal__input,
+.login-modal__input {
+  display: block;
+  width: 90%;
+  padding: 12px;
+  margin: 0 auto 15px auto;
+  border: 2px solid #2c2c2c;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
+}
+
+.forgot-password__input:focus,
+.regis-modal__input:focus,
+.login-modal__input:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 0.15vw rgba(0, 0, 0, 0.3);
+}
+
+.forgot-password__input::placeholder,
+.regis-modal__input::placeholder,
+.login-modal__input::placeholder {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Wrapper for Password Fields */
+.password-input-wrapper {
+  position: relative;
+  width: 90%;
+  margin: 0 auto 15px auto;
+}
+
+/* Password inputs (same width as normal inputs) */
+.password-input-wrapper input {
+  width: 100%;
+  padding: 12px 65px 12px 12px; /* space for Show/Hide text */
+  border: 2px solid #2c2c2c;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.password-input-wrapper input:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 0.15vw rgba(0, 0, 0, 0.3);
+}
+
+/* Show/Hide Button */
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: 500;
+  color: #e87722;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-password:hover {
+  text-decoration: underline;
+  color: #d66f1f;
+}
+
+/* Change Password Form */
+.change-password__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.change-password__form .login-modal__login-btn,
+.regis-modal__next-btn,
+.forgot-password__btn,
+.login-modal__login-btn {
+  display: block;
+  width: 100%;
+  margin: 10px auto 0 auto; /* centers button horizontally */
+  background-color: #e87722;
+  color: #fff;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.forgot-password__btn:hover,
+.regis-modal__next-btn:hover,
+.login-modal__login-btn:hover {
+  background-color: #d66f1f;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   Registration Info Section
+========================= */
+.regis-modal__info-section {
+  border: 1px solid #2c2c2c;
+  margin: 15px 0;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.regis-modal__info-section p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* =========================
+   Links
+========================= */
+.login-modal__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.login-modal__remember {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login-modal__forgot,
+.forgot-password__back a,
+.login-modal__register a {
+  color: #e87722;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+
+.login-modal__forgot:hover,
+.forgot-password__back a:hover,
+.login-modal__register a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Animations
+========================= */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.modal-enter-right { animation: slideInRight 0.3s forwards; }
+.modal-enter-left { animation: slideInLeft 0.3s forwards; }
+.modal-exit-left { animation: slideInLeft 0.3s reverse forwards; }
+.modal-exit-right { animation: slideInRight 0.3s reverse forwards; }
+
+.modal-fade-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.modal-fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.modal-fade-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.modal-fade-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+

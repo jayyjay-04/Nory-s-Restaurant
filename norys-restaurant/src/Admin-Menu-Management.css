@@ -1,0 +1,236 @@
+.admin__menu-management-container {
+  padding: 20px;
+  height: 80vh;
+  background-color: #fff5ec;
+  box-sizing: border-box;
+}
+
+.menu__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding: 8px;
+}
+
+.menu__tab-btn {
+  border: 2px solid black; /* black border for inactive */
+  background: transparent;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  opacity: 0.6; /* 60% opacity when inactive */
+}
+
+.menu__tab-btn.active {
+  background: #e87722;
+  border: none; /* remove black border when active */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  opacity: 1; /* full opacity when active */
+  color: white;
+}
+
+
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+.menu__row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Gap between item and actions */
+}
+
+.menu__item {
+  flex: 1; /* Take up available space */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fffaf5;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease;
+}
+
+.menu__item:hover {
+  background: #fff3e8;
+  transform: scale(1.01);
+}
+
+.menu__name {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.menu__dots {
+  flex: 1;
+  border-bottom: 2px dotted #ddd;
+  margin: 0 10px;
+  height: 1px;
+}
+
+.menu__price {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Action icons (no button background) */
+.menu__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 5px;
+}
+
+.menu__actions button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__actions img {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Edit hover effect (slight highlight) */
+.menu__edit img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.3);
+}
+
+/* Delete hover effect (reddish tint) */
+.menu__delete img:hover {
+  transform: scale(1.1);
+  filter: brightness(0.8) sepia(1) hue-rotate(-20deg) saturate(3);
+}
+
+/* Add Dish Button */
+.menu__add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #e87722;
+  background: #fff;
+  border: 2px dashed #e87722;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu__add:hover {
+  background: #ffe6d1;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  filter: brightness(1.05);
+}
+
+/* Modal Overlay */
+.edit-modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+/* Modal Box */
+.edit-modal__content {
+  background: #fffaf5;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  width: 700px; /* wider to fit all inputs in one line */
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Input fields - now in a single line */
+.edit-modal__fields {
+  display: flex;
+  flex-direction: row; /* ensure inputs are side by side */
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.edit-modal__fields input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: lightgray;
+  font-size: 14px;
+}
+
+/* Buttons */
+.edit-modal__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.clear-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-btn {
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cancel-btn {
+  background-color: #cfd1d3;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Button hover */
+.clear-btn:hover {
+  background-color: #b71c1c;
+}
+
+.save-btn:hover {
+  background-color: #ef6c00;
+}
+
+.cancel-btn:hover {
+  background-color: #bdbfc1;
+}

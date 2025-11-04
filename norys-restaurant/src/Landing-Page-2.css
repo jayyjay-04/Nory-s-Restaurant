@@ -1,0 +1,45 @@
+.landing2 {
+  background-color: #ffffff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing2__text {
+  margin: 50px;
+  width: 43vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.landing2__images {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.landing2__image-section {
+  height: 360px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing2__image {
+  width: 300px;
+  height: auto;
+  border-radius: 100%;
+}
+
+.landing2__image-section h2 {
+  font-size: 30px;
+  margin: 50px;
+  text-align: center;
+}

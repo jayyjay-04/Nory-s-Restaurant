@@ -1,0 +1,79 @@
+.landing3 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.landing3__text-wrapper {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.landing3__text1,
+.landing3__text2,
+.landing3__text3 {
+  width: 35vw;
+  text-align: left;
+  color: #333;
+}
+
+.landing3__text1 h1 {
+  font-size: 40px;
+  color: #e87722;
+  margin-bottom: 20px;
+}
+
+.landing3__text2 p,
+.landing3__text3 p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.landing3__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+  border: #e87722 6px solid;
+  border-radius: 10px;
+}
+
+.landing3__image-main {
+  height: 450px;
+  width: auto;
+}
+
+.landing3__image-wrapper {
+  position: relative;
+  margin-right: 100px;
+  height: 450px; /* Match image height */
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing3__image-bg {
+  position: absolute;
+  top: 121px;       /* downward offset for the "behind" effect */
+  left: -6cap;      /* rightward offset for the "behind" effect */
+  height: 450px;
+  width: 68cap;    /* or set to match approx image width */
+  background-color: #e87722;
+  border-radius: 25px 0 0 25px; /* rounded corners like example */
+  z-index: 0;      /* behind the image */
+}
+
+.landing3__image-main {
+  position: relative;
+  height: 410px;
+  width: auto;
+  border-radius: 10px; /* rounded corners */
+  border: none; /* remove the previous border */
+  z-index: 1;
+}

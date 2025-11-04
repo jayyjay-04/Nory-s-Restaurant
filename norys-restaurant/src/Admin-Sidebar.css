@@ -1,0 +1,62 @@
+.admin-sidebar__container {
+  background-color: #e87722;
+  height: 90vh;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-sidebar__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Each button */
+.sidebar__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon image */
+.sidebar__btn img {
+  height: 32px;
+  width: 32px;
+  transition: all 0.25s ease;
+  filter: brightness(0) invert(1);
+}
+
+/* Hover effect */
+.sidebar__btn:hover {
+  background-color: #cc661a;
+}
+
+.sidebar__btn:active {
+  border: 1px solid white;
+}
+
+.sidebar__btn:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+/* Active button highlight */
+.sidebar__btn.active {
+  border: 1px solid white; /* added this line */
+}
+
+.sidebar__btn.active img {
+  filter: brightness(1) saturate(1) invert(0);
+}

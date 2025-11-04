@@ -1,0 +1,182 @@
+.orders-menu__container {
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  box-sizing: border-box;
+  /* remove overflow-y so the page handles scrolling */
+}
+
+
+.orders-menu__content {
+  width: 90%;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orders-menu__content h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+/* Main layout (left: orders list, right: summary) */
+.orders-menu__main {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* LEFT SIDE: Orders list */
+.orders-menu__list {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.orders-menu__order-group {
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.orders-menu__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.orders-menu__item:last-child {
+  border-bottom: none;
+}
+
+.orders-menu__item-details {
+  flex: 1;
+}
+
+.orders-menu__item-details h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Quantity controls */
+.orders-menu__qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.orders-menu__qty-controls button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: #ffa94d;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.orders-menu__qty-controls button:hover {
+  background-color: #e67e22;
+}
+
+.orders-menu__qty-controls span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Right side of each order item */
+.orders-menu__item-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.orders-menu__item-price {
+  font-weight: 600;
+  color: #333;
+}
+
+.orders-menu__back-btn:hover {
+  background-color: #555;
+}
+
+/* Scrollbar styling */
+.orders-menu__list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.orders-menu__list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .orders-menu__main {
+    flex-direction: column;
+  }
+
+  .orders-menu__list {
+    max-height: none;
+  }
+}
+
+.orders-menu__remove-btn {
+  border: none;
+  background-color: #ff7043;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.orders-menu__remove-btn:hover {
+  background-color: #e64a19;
+}
+
+.order-summary__qty {
+  color: #888;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+.order-summary__dish-count {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.order-summary__items-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+  padding-right: 6px;
+}
+
+.order-summary__items-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.order-summary__items-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}

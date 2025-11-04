@@ -1,0 +1,124 @@
+/* Shipping Container - Centered */
+.shipping__container {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Limit width for better centering */
+  font-family: Arial, sans-serif;
+  height: 85vh;
+  width: 90%;
+}
+
+/* Mode Switch Buttons - Centered */
+.shipping__mode-switch {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.shipping__mode-switch button {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: 150px;
+  text-align: center;
+  border: 2px solid black; /* default (inactive) border */
+}
+
+.shipping__mode-switch button.active {
+  background-color: #E87722;
+  color: white;
+  border: none; /* remove black border for active */
+}
+
+
+/* Forms */
+.shipping__delivery-form,
+.shipping__pickup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.shipping__delivery-form input,
+.shipping__pickup-form input {
+  width: 90%; /* Full width within container */
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+.shipping__delivery-form input:focus,
+.shipping__pickup-form input:focus {
+  border-color: #E87722;
+  outline: none;
+  box-shadow: 0 0 5px rgba(232, 119, 34, 0.5);
+}
+
+/* Headings */
+.shipping__container h3 {
+  color: #E87722;
+  text-align: center; /* Center heading */
+  margin-bottom: 15px;
+}
+
+.shipping__container h4 {
+  margin: 10px 0 5px 0;
+  color: #333;
+}
+
+/* Info Paragraph */
+.shipping__container p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+  text-align: center; /* Center text */
+}
+
+/* Pickup Form - Larger Inputs for Better Readability */
+.shipping__pickup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  text-align: center;
+}
+
+.shipping__pickup-form input {
+  width: 90%; /* Slightly narrower for balanced spacing */
+  padding: 16px 18px; /* Bigger padding for better readability */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1.1rem; /* Bigger text */
+  font-weight: 500;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.shipping__pickup-form input:focus {
+  border-color: #E87722;
+  outline: none;
+  box-shadow: 0 0 8px rgba(232, 119, 34, 0.4);
+}
+
+.shipping__pickup-form p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 10px;
+  max-width: 90%;
+  line-height: 1.5;
+  text-align: center;
+}

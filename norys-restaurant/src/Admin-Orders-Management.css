@@ -1,0 +1,169 @@
+.admin-orders__container {
+  padding: 20px;
+  min-height: 79vh;
+  overflow-y: auto;
+}
+
+.admin-orders__section {
+  margin-bottom: 30px;
+}
+
+.admin-orders__section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2b2b2b;
+}
+
+/* Table styling */
+.admin-orders__table-wrapper {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  overflow-x: auto;
+}
+
+.admin-orders__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.admin-orders__table th {
+  background-color: #e87722;
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+.admin-orders__table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.admin-orders__table tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+/* Buttons */
+.admin-orders__view-btn {
+  background: none;
+  border: none;
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.admin-orders__done-btn {
+  background-color: #3cb043;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 4px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.admin-orders__delete-btn {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.admin-orders__done-btn:hover {
+  background-color: #2e8b2e;
+}
+
+.admin-orders__delete-btn:hover {
+  background-color: #b63a38;
+}
+
+/* Footer */
+.admin-orders__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.admin-orders__clear-btn {
+  background: #b83232;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.admin-orders__clear-btn:hover {
+  background: #a12a2a;
+}
+
+.admin-orders__total {
+  background-color: #e87722;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* --- Modal Styles --- */
+.admin-orders__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.admin-orders__modal-content {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px 30px;
+  width: 400px;
+  text-align: left;
+  color: #222;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.admin-orders__modal-content h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.admin-orders__modal-content p {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.admin-orders__close-btn {
+  display: block;
+  margin: 20px auto 0;
+  background: #e87722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-orders__close-btn:hover {
+  background: #cc661a;
+}

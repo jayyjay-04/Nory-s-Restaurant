@@ -1,0 +1,129 @@
+.order-tray__container {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.order-tray__content {
+  height: 85vh;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-tray__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-tray__logo-img {
+  max-height: 130px;
+  width: auto;
+  object-fit: contain;
+}
+
+.order-tray__bottom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  min-height: 0;
+}
+
+.order-tray__bottom h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.order-tray__order-view {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 5px;
+}
+
+/* Center "No orders yet" */
+.order-tray__order-view.empty {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.order-tray__order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fdf8f3;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.order-tray__order-item button {
+  margin-left: 10px;
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background 0.2s ease;
+}
+
+.order-tray__order-item button:hover {
+  background: #d9363e;
+}
+
+.order-tray__submit-btn {
+  width: 100%;
+  background: orange;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: background 0.2s ease;
+}
+
+.order-tray__submit-btn:hover {
+  background: #E87722;
+}
+
+/* Title + bowl icon inline */
+.order-tray__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* space between text and icon */
+  margin-bottom: 15px;
+}
+
+.order-tray__title h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.order-tray__title-icon {
+  width: auto; /* match icon size to text height */
+  height: 13px;
+}

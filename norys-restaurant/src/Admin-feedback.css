@@ -1,0 +1,69 @@
+.admin-feedback__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* spacing between cards */
+}
+
+.admin-feedback__card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 18px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.admin-feedback__card:hover {
+  background: #fff3e6;
+  transform: scale(1.01);
+}
+
+.admin-feedback__card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.admin-feedback__card h4 {
+  margin: 0;
+  font-weight: 700;
+  color: #222;
+  font-size: 16px;
+}
+
+.admin-feedback__date {
+  font-size: 12px;
+  color: #999;
+}
+
+.admin-feedback__card p {
+  margin: 0 0 12px 0;
+  color: #333;
+  line-height: 1.4;
+}
+
+.admin-feedback__resolve-btn {
+  background: #e87722;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+  align-self: flex-end; /* pushes button to bottom-right */
+}
+
+.admin-feedback__resolve-btn:hover {
+  background: #cf661b;
+}
+
+.admin-feedback__empty {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin-top: 40px;
+}

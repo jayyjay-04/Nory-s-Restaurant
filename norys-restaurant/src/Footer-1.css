@@ -1,0 +1,118 @@
+.footer1 {
+  display: flex;
+  justify-content: center;
+  background-color: #ff9046;
+  padding: 53px 0;
+  color: white;
+}
+
+.footer1__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1584px;
+  padding: 0 53px;
+}
+
+/* Left Section */
+.footer1__left {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.footer1__logo {
+  width: 264px;
+  height: auto;
+}
+
+.vertical-line {
+  width: 2.6px;
+  height: 198px;
+  background-color: white;
+}
+
+.footer1__main-text h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+  max-width: 330px;
+  margin: 0;
+  text-decoration: none;
+}
+
+/* Right Section */
+.footer1__right {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.footer1__info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.footer1__info-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.footer1__icon {
+  width: 30px;
+  height: auto;
+}
+
+.footer1__info-text p {
+  margin: 0;
+  font-size: 21px;
+  color: white;
+  width: 260px;
+}
+
+/* QR + text side by side */
+.footer1__bulk-orders {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.norys-qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.norys-qr-code {
+  height: 100px;
+  width: auto;
+  margin: 0;
+}
+
+.norys-qr-container p {
+  font-size: 10px;
+  margin-top: 4px;
+}
+
+
+
+/* Footer Bottom */
+.footer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e87722;
+  padding: 10px 0;
+}
+
+.footer2__text1 p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 2px 0;
+  text-align: center;
+}

@@ -1,0 +1,22 @@
+.Landing4 {
+background: #fff;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Landing4__Text-Wrapper {
+    padding-top: 100px;
+  width: 43vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Landing4__Image-Wrapper img {
+    height: 600px;
+}

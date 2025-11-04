@@ -1,0 +1,107 @@
+.landing5 {
+  height: 100vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.landing5__content-wrapper {
+  margin-left: 100px;
+  font-size: larger;
+}
+
+.landing5__text1 h1 {
+  font-size: 40px;
+  color: #e87722;
+}
+
+.landing5__text2 {
+  width: 500px;
+}
+
+.landing5__contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.landing5__contact-icon {
+  width: 50px;
+  height: auto;
+  padding: 8px;
+}
+
+.landing5__input-section {
+  display: flex;
+  flex-direction: column;
+  padding-right: 100px;
+}
+
+.landing5__input1 {
+  box-sizing: border-box;
+  height: 50px;
+  width: 500px;
+  margin: 8px;
+  border: 3px solid #e87722;
+  border-radius: 8px;
+  transition: border-color 0.4s, box-shadow 0.4s;
+  padding: 8px;
+}
+
+.landing5__input1:focus {
+  border-color: #f1a25d;
+  box-shadow: 0 0 0 0.15vw #f1a25d;
+  outline: none;
+}
+
+.landing5__input2 {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  height: 300px;
+  width: 500px;
+  margin: 8px;
+  border: 3px solid #e87722;
+  border-radius: 8px;
+  transition: border-color 0.4s, box-shadow 0.4s;
+  padding: 10px;
+  resize: none;
+}
+
+.landing5__input2:focus {
+  border-color: #f1a25d;
+  box-shadow: 0 0 0 0.15vw #f1a25d;
+  outline: none;
+}
+
+.landing5__button {
+  width: 515px;
+  height: 45px;
+  margin-top: 10px;
+  background-color: #e87722;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.4s, box-shadow 0.4s, transform 0.2s;
+}
+
+.landing5__button:hover {
+  background-color: #f1a25d;
+  box-shadow: 0 8px 15px rgba(241, 162, 93, 0.4);
+  transform: translateY(-3px);
+}
+
+.landing5__button:active {
+  background-color: #cf650e;
+  transform: translateY(-1px);
+}
+
+/* --- Added placeholder font-size --- */
+.landing5__input1::placeholder,
+.landing5__input2::placeholder {
+  font-size: 110%; /* 5% bigger */
+}
